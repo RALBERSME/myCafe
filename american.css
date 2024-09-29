@@ -60,7 +60,7 @@ p:hover {
 }
 a {
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: brown;
 }
 a:hover {
@@ -78,4 +78,7 @@ a:hover {
 }
 #music {
   font-size: 1.75rem;
+}
+#continue {
+  text-decoration: overline underline;
 }

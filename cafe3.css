@@ -175,3 +175,8 @@ button {
   color: brown;
   background-color: rgb(250, 240, 220);
 }
+#continue {
+  margin-left: 35px;
+  font-size: 1.75rem;
+  text-decoration: overline underline;
+}

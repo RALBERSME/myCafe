@@ -141,10 +141,10 @@ a {
   text-decoration: none;
   margin-left: 10px;
   font-size: 2rem;
-  color: white;
+  color: brown;
   cursor: pointer;
 }
 a:hover {
-  color: brown;
+  color: dodgerblue;
   font-size: 3rem;
 }

@@ -4,26 +4,29 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: black;
+}
 .container {
   margin: 2.5%;
 }
 .split {
   display: flex;
-  gap: 5px;
+  gap: 25px;
   height: 90vh;
   /* overflow: hidden; */
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 1.5rem;
 }
 .split a {
-  margin-top: 15px;
+  margin-top: 25px;
   cursor: pointer;
 }
 .arab {
-  height: 100vh;
-  width: 90%;
+  height: 90vh;
+  width: 70%;
   margin: 0 auto;
-  padding: 5%;
+  padding: 2.5% 5% 0 2%;
   background: url("./Images/arabian-coffee.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -35,18 +38,21 @@
 .arab a:hover {
   color: rgb(186, 115, 252);
 }
+#introArab {
+  width: 80%;
+}
 .turk {
-  height: 100vh;
-  width: 90%;
+  height: 90vh;
+  width: 70%;
   margin: 0 auto;
-  padding: 2% 5%;
+  padding: 2.5% 5% 0 2%;
   background: url("./Images/coffee-pot-turk.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   color: whitesmoke;
 }
 #turk {
-  padding-top: 66%;
+  padding-top: 60%;
 }
 .turk a {
   color: whitesmoke;
