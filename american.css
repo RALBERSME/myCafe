@@ -71,3 +71,11 @@ a:hover {
   top: 90%;
   left: 5%;
 }
+.music {
+  position: absolute;
+  top: 7.5%;
+  left: 5%;
+}
+#music {
+  font-size: 1.75rem;
+}

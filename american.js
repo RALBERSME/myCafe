@@ -1,2 +1,4 @@
-let audio = new Audio("jazz.mp3");
-audio.play();
+function playMusic() {
+  let audio = new Audio("nostalgia.mp3");
+  audio.play();
+}
