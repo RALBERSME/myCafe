@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background-color: antiquewhite;
+}
+.container {
+  margin: 2.5% auto 1%;
+  height: 90%;
+  background: url("./Images/Wien_Cafe_Central_2004.jpg");
+  background-position: 50% 90%;
+  padding: 2.5%;
+  background-repeat: no-repeat;
+  overflow-y: scroll;
+  font-size: 1.5rem;
+}
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+.introImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 2px 2px rgb(249, 249, 233);
+}
+.item {
+  width: 30%;
+  background-color: rgba(256, 256, 256, 0.8);
+  padding: 2.5%;
+  margin-bottom: 1%;
+}
+#continue {
+  cursor: pointer;
+  text-decoration: none;
+  color: brown;
+}
+#continue:hover {
+  color: dodgerblue;
+  text-shadow: 1px 1px 1px 1px black;
+  font-size: 1.25rem;
+}
+
+a {
+  text-decoration: none;
+  color: brown;
+}
+a:hover {
+  color: dodgerblue;
+}
+#source {
+  color: black;
+}

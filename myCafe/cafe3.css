@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background: url("https://cdn.pixabay.com/photo/2020/10/07/17/12/coffee-5635765_640.jpg");
+  background-size: cover;
+
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+nav {
+  margin-top: 2.5%;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: left;
+  gap: 5px;
+}
+ul {
+  display: flex;
+}
+li {
+  list-style: none;
+  margin-left: 25px;
+}
+li button,
+#status {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 1.5rem;
+  padding: 15px;
+  border-radius: 10px;
+}
+li button {
+  cursor: pointer;
+}
+.container {
+  position: relative;
+  margin-bottom: 10%;
+  height: 90vh;
+}
+.cup {
+  position: absolute;
+  width: 280px;
+  height: 260px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  border-bottom: 28px solid white;
+  background: white;
+  bottom: 20%;
+  left: calc(50% - 80px);
+}
+.cup::after {
+  position: absolute;
+  content: "";
+  top: 0%;
+  left: 99%;
+  width: 100px;
+  height: 100px;
+  border-radius: 35% 50% 50% 10px;
+  background-color: white;
+}
+@keyframes growCup {
+  from {
+    height: 260px;
+  }
+  to {
+    height: 500px;
+  }
+}
+@keyframes reduceCup {
+  from {
+    height: 500px;
+  }
+  to {
+    height: 260px;
+  }
+}
+.liquid {
+  position: absolute;
+  width: 250px;
+  height: 240px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  border-bottom: 28px solid #fff;
+  background: transparent;
+  bottom: -10px;
+  left: 5%;
+}
+.espresso {
+  animation: makeEspresso 4s 0s linear forwards;
+}
+@keyframes makeEspresso {
+  from {
+    width: 250px;
+    height: 0px;
+    background: black;
+  }
+  to {
+    width: 250px;
+    height: 140px;
+    background: black;
+  }
+}
+
+.cappuccino {
+  animation: makeCappu 4s 0s linear forwards;
+}
+@keyframes makeCappu {
+  from {
+    width: 250px;
+    height: 0px;
+    background: linear-gradient(brown, black);
+  }
+  to {
+    width: 250px;
+    height: 240px;
+    background: linear-gradient(white, brown 5%, white 1%, brown);
+  }
+}
+
+.latte {
+  animation: makeLatte 4s 0s linear forwards;
+}
+@keyframes makeLatte {
+  from {
+    width: 250px;
+    height: 0px;
+    background: linear-gradient(brown, black);
+  }
+  to {
+    width: 250px;
+    height: 480px;
+    background: linear-gradient(white, brown, rgb(250, 206, 206) 50%);
+  }
+}
+.filter {
+  animation: makeFilter 4s 0s linear forwards;
+}
+@keyframes makeFilter {
+  from {
+    width: 250px;
+    height: 0px;
+    background: black;
+  }
+  to {
+    width: 250px;
+    height: 240px;
+    background: black;
+  }
+}
+
+.details {
+  position: absolute;
+  top: 5%;
+  left: 68%;
+  margin-right: 10px;
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: brown;
+  cursor: pointer;
+}
+a:hover {
+  color: dodgerblue;
+}
+
+button {
+  color: brown;
+  background-color: rgb(250, 240, 220);
+}
