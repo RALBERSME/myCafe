@@ -66,3 +66,8 @@ a {
 a:hover {
   color: dodgerblue;
 }
+.links {
+  position: absolute;
+  top: 90%;
+  left: 5%;
+}

@@ -6,7 +6,7 @@
 body {
   height: 100vh;
   overflow-x: scroll;
-  background: url("https://cdn.pixabay.com/photo/2017/08/29/21/43/flag-2694986_640.jpg");
+  background: url("./Images/flag.jpg");
 }
 h1 {
   text-align: center;
@@ -19,7 +19,7 @@ h1 {
   justify-content: center;
 }
 ul li {
-  background: url("https://cdn.pixabay.com/photo/2023/09/01/14/16/cappuccino-8227055_640.jpg");
+  background: url("./Images/cappuccino.jpg");
   background-attachment: fixed;
   filter: grayscale(0.7);
   border: 4px outset rgb(210, 100, 100);

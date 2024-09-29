@@ -7,8 +7,8 @@
 body {
   height: 100vh;
   background: url("./Images/Frühstück.jpg");
-  background-position: 50% 50%;
-  background-size: 90% 95%;
+  background-position: 20% 50%;
+  /* background-size: 70% 95%; */
   background-repeat: no-repeat;
   font-family: "Yanone Kaffeesatz", sans-serif;
   position: relative;
@@ -18,14 +18,14 @@ body {
   width: 15%;
   top: -5%;
   left: 78%;
-  color: white;
+  color: black;
   font-size: 2.5rem;
   margin-top: 7.5%;
 }
 
 footer {
   position: absolute;
-  color: white;
+  color: black;
   font-size: 2rem;
   top: 85%;
   left: 78%;

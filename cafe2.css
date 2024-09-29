@@ -48,18 +48,18 @@ body {
 }
 
 .images:nth-child(1) {
-  background-image: url("https://cdn.pixabay.com/photo/2020/06/27/14/14/turkish-coffee-5346050_640.jpg");
+  background-image: url("./Images/turkish-coffee.jpg");
 }
 
 .images:nth-child(2) {
-  background-image: url("https://cdn.pixabay.com/photo/2015/02/24/11/54/vienna-647328_1280.jpg");
+  background-image: url("./Images/vienna.jpg");
 }
 
 .images:nth-child(3) {
-  background-image: url("https://cdn.pixabay.com/photo/2023/01/11/12/26/coffee-shop-7711529_960_720.jpg");
+  background-image: url("./Images/italien.png");
 }
 .images:nth-child(4) {
-  background-image: url("https://cdn.pixabay.com/photo/2016/03/26/23/23/starbucks-1281880_640.jpg");
+  background-image: url("./Images/starbucks.jpg");
 }
 
 .images:hover {
