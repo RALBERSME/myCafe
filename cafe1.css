@@ -229,3 +229,16 @@ body {
     opacity: 0;
   }
 }
+
+#continue {
+  position: absolute;
+  margin-top: -7.5%;
+  margin-left: 5%;
+  text-decoration: overline underline;
+  color: brown;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+#continue:hover {
+  color: dodgerblue;
+}
