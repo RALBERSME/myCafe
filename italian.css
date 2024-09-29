@@ -51,3 +51,11 @@ ul li a:hover {
   text-shadow: 2px 1px 1px white;
   transform: scale(0.9);
 }
+#music {
+  text-decoration: none;
+  color: wheat;
+  font-size: 1rem;
+}
+#music:hover {
+  color: brown;
+}

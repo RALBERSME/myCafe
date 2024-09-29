@@ -24,5 +24,6 @@ function showNav() {
 }
 
 /*sound */
+
 let audio = new Audio("drinking.mp3");
 audio.play();

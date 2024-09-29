@@ -36,3 +36,8 @@ function createSplash(raindrop) {
     splash.remove();
   }, 300);
 }
+
+function playMusic() {
+  let audio = new Audio("drinking.mp3");
+  audio.play();
+}
