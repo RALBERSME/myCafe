@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background: linear-gradient(rgb(237, 97, 97), wheat);
+}
+.container {
+  margin: 5%;
+}
+#text {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  font-size: 2rem;
+  margin-right: 5%;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+#textBegin {
+  font-size: 2.75rem;
+  color: brown;
+}
+.links {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5%;
+  width: 50%;
+  top: 50%;
+  left: 25%;
+  font-size: 2rem;
+  margin-right: 5%;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+.links a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: brown;
+  margin-bottom: 25px;
+}
+.images {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+#beeren {
+  width: 300px;
+  height: 300px;
+  animation: moveBean 3s 0s ease-in-out infinite;
+}
+#fire {
+  width: 400px;
+  height: 450px;
+}
+#flame1 {
+  position: absolute;
+  width: 80px;
+  height: 40px;
+  top: 76%;
+  left: 10%;
+  opacity: 1;
+  transform: rotate(-105deg);
+  animation: flame1Move 4s 0s ease-in-out infinite;
+}
+@keyframes flame1Move {
+  0% {
+    top: 76%;
+    left: 10%;
+    opacity: 1;
+    transform: rotate(-105deg);
+  }
+  80% {
+    top: 38%;
+    left: 15%;
+    opacity: 0.6;
+    transform: rotate(-95deg);
+  }
+  90% {
+    top: 37%;
+    left: 15%;
+    opacity: 0.01;
+    transform: rotate(-95deg);
+  }
+  100% {
+    top: 36%;
+    left: 15%;
+    opacity: 0;
+    transform: rotate(-85deg);
+  }
+}
+#flame2 {
+  position: absolute;
+  width: 80px;
+  height: 40px;
+  top: 76%;
+  left: 15.5%;
+  opacity: 1;
+  transform: rotate(-65deg);
+  animation: flame2Move 3s 1s ease-in-out infinite;
+}
+@keyframes flame2Move {
+  0% {
+    top: 76%;
+    left: 15.5%;
+    opacity: 1;
+    transform: rotate(-65deg);
+  }
+  70% {
+    top: 37%;
+    left: 16%;
+    opacity: 0.1;
+    transform: rotate(-105deg);
+  }
+
+  100% {
+    top: 36%;
+    left: 16%;
+    opacity: 0;
+    transform: rotate(-85deg);
+  }
+}
+#flame3 {
+  position: absolute;
+  width: 60px;
+  height: 90px;
+  top: 78%;
+  left: 14%;
+  opacity: 1;
+  animation: flame3Move 5s 2s ease-in-out infinite;
+}
+@keyframes flame3Move {
+  0% {
+    top: 78%;
+    left: 14%;
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+
+  100% {
+    top: 34%;
+    left: 16%;
+    opacity: 0;
+    transform: rotate(-5deg);
+  }
+}
+@keyframes moveBean {
+  0% {
+    transform-origin: top left;
+    transform: rotate(0deg);
+  }
+  50% {
+    transform-origin: top left;
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform-origin: top left;
+    transform: rotate(0deg);
+  }
+}
+
+/*bean animation */
+.coffeeAnimation {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+}
+#cup {
+  width: 600px;
+  transform: rotate(0);
+  animation: wackelTasse 3s 2s ease-in-out infinite;
+}
+@keyframes wackelTasse {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  55% {
+    transform: rotate(0);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  65% {
+    transform: rotate(-5deg);
+  }
+  70% {
+    transform: rotate(0);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+#bean1 {
+  position: absolute;
+  top: -10%;
+  left: -110%;
+  opacity: 0;
+  width: 35px;
+  animation: flyingBean 3s 0s ease-in-out infinite;
+}
+@keyframes flyingBean {
+  0% {
+    top: -10%;
+    left: -110%;
+    opacity: 0;
+  }
+  10% {
+    top: -10%;
+    left: -110%;
+    opacity: 0.3;
+  }
+  99% {
+    top: 48%;
+    left: 40%;
+    opacity: 1;
+  }
+  100% {
+    top: 48%;
+    left: 40%;
+    opacity: 0;
+  }
+}

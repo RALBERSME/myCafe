@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: black;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  position: relative;
+}
+.cat {
+  position: absolute;
+  top: -23%;
+  left: 26%;
+  height: 40%;
+  color: white;
+}
+.hide {
+  display: none;
+}
+h1 {
+  font-size: 4rem;
+  text-align: left;
+  color: white;
+}
+.question {
+  margin-top: 15%;
+  margin-left: 25%;
+  transform: translateY(-230%);
+  animation: askQuestion 6s 0.5s linear forwards;
+}
+@keyframes askQuestion {
+  from {
+    transform: translateY(-230%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+p {
+  display: inline-block;
+  margin-right: 7.5px;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background-color: white;
+  transform: translateX(360px);
+  margin-top: 40px;
+  animation: spanGrow 3s 7s linear forwards;
+}
+@keyframes spanGrow {
+  from {
+    width: 10px;
+    height: 10px;
+  }
+  to {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.cup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-size: 2rem;
+  animation: offerCoffee 6s 1.5s ease-in-outforwards;
+}
+@keyframes offerCoffee {
+  from {
+    transform: translateY(-230%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+#cup {
+  width: 380px;
+  height: 350px;
+  transform: rotateY(0deg);
+  cursor: pointer;
+}
+#cup:hover {
+  animation: turnCup 2s 0s ease-in-out forwards;
+}
+@keyframes turnCup {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(180deg);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* nav */
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background: url("./Images/coffee-6094069_1280.jpg");
+  background-size: 20%;
+  background-repeat: repeat-x;
+  transform: rotateX(90deg);
+  /* animation: showNav 3s 0s linear forwards; */
+}
+@keyframes showNav {
+  from {
+    transform: rotateX(90deg);
+  }
+  to {
+    transform: rotateX(0deg);
+  }
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+  margin-top: 4%;
+}
+li {
+  list-style: none;
+  padding: 15px 20px;
+  background-color: black;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 2.5rem;
+}
