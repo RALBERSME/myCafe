@@ -8,18 +8,216 @@
   </head>
   <body>
     <div class="container">
-      <img
-        width="98%"
-        height="90%"
-        alt="Cafe"
-        src="./Images/outside.png"
-        style="border: 5px solid black"
-      />
+      <div class="tables">
+        <img
+          width="98%"
+          height="100%"
+          alt="Cafe"
+          src="./Images/outside.png"
+          style="border: 5px solid black"
+        />
+        <div class="varieties">
+          <nav>
+            <ul>
+              <li onclick="openArabica()">Arabica</li>
+              <li onclick="openRobusta()">Robusta</li>
+              <li onclick="openLiberica()">Liberica</li>
+              <li onclick="openExcelsa()">Excelsa</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
       <audio controls autoplay>
         <source src="bossa-nova-chillwave-cafe-233024.mp3" type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
       <a href="cafe6.html">klicken Sie bitte hier, um ins Cafe zu gelangen</a>
     </div>
+    <div id="arabica" class="arabica hide">
+      Die Arabica Kaffeebohne ist länglicher und oval, mit einer S-förmigen
+      Kerbe. In den USA wird vorwiegend Arabica getrunken, der aus Südamerika
+      kommt. <br /><br />In Europa konsumieren die Menschen neben Arabica auch
+      Robusta, beides bevorzugt aus Afrika und Asien kommend. <br /><br />
+      <u>Wesentliche Eigenschaften von Arabica:</u><br /><br />
+      <p>Aussehen: eher flach, länglich & oval mit geschwungenem Einschnitt</p>
+      <br />
+      <p>
+        Haupt-Anbauregionen: Äthiopien, Brasilien, Venezuela, Bolivien,
+        Kolumbien, Karibik, Ostafrika
+      </p>
+      <br />
+      <p>
+        Charakteristika: empfindliche Pflanze mit hohen Anforderungen an Boden
+        und Klima
+      </p>
+      <br />
+      <p>Reifung: 9 Monate</p>
+      <br />
+      <p>
+        Klima & Anbauhöhe: konstante Temperaturen, eher schattig, hohe
+        Luftfeuchtigkeit auf 600 bis 2300 Höhenmeter
+      </p>
+      <br />
+      <p>DNA: 44 Chromosomen</p>
+      <br />
+      <p>Anbau-Anteil am Weltmarkt: ca. 61%</p>
+      <br />
+      <p>
+        Geschmack: fruchtig, nussig, schokoladig bis süß, beerig oder blumig,
+        also sehr vielfältig im Geschmack
+      </p>
+      <br />
+      <p>Ideal für: Filterkaffee & Espresso</p>
+      <br />
+      <a
+        href="https://www.kaffee-partner.de/de/magazin/lesen/unterschied-kaffee-sorten-arabica-und-robusta"
+        target="_blank"
+        >klicken Sie hier um mehr über die Unterschiede der Sorten zu lesen</a
+      >
+      <br /><br />
+      <a id="close" onclick="closeArabica()"
+        >>>klicken Sie hier, um diese Info schließen</a
+      >
+    </div>
+    <div id="robusta" class="robusta hide">
+      Robusta-Kaffee wird gern als Tieflandkaffee bezeichnet, da er schon ab 300
+      Höhenmeter gut wächst. Die Bohnen sind recht robust und widerstandsfähig
+      gegen Wettereinflüsse und Krankheiten. Sie lässt sich auf Grund des
+      flachen Anbaugebietes maschinell ernten, qualitativ hochwertiger Robusta
+      muss aber per Hand geerntet oder aussortiert werden. <br /><br />
+      <u>Wesentliche Eigenschaften von Robusta:</u><br /><br />
+      <p>Aussehen: eher flach, länglich & oval mit geschwungenem Einschnitt</p>
+      <br />
+      <p>
+        Haupt-Anbauregionen: Äthiopien, Brasilien, Venezuela, Bolivien,
+        Kolumbien, Karibik, Ostafrika
+      </p>
+      <br />
+      <p>
+        Charakteristika: empfindliche Pflanze mit hohen Anforderungen an Boden
+        und Klima
+      </p>
+      <br />
+      <p>Reifung: 9 Monate</p>
+      <br />
+      <p>
+        Klima & Anbauhöhe: konstante Temperaturen, eher schattig, hohe
+        Luftfeuchtigkeit auf 600 bis 2300 Höhenmeter
+      </p>
+      <br />
+      <p>DNA: 44 Chromosomen</p>
+      <br />
+      <p>Anbau-Anteil am Weltmarkt: ca. 61%</p>
+      <br />
+      <p>
+        Geschmack: fruchtig, nussig, schokoladig bis süß, beerig oder blumig,
+        also sehr vielfältig im Geschmack
+      </p>
+      <br />
+      <p>Ideal für: Filterkaffee & Espresso</p>
+      <br />
+      <a
+        href="https://www.kaffee-partner.de/de/magazin/lesen/unterschied-kaffee-sorten-arabica-und-robusta"
+        target="_blank"
+        >klicken Sie hier um mehr über die Unterschiede der Sorten zu lesen</a
+      >
+      <br /><br />
+      <a id="close" onclick="closeRobusta()"
+        >>>klicken Sie hier, um diese Info schließen</a
+      >
+    </div>
+    <div id="liberica" class="liberica hide">
+      Im Gegensatz zu Arabica und Robusta steht Liberica als Nischenprodukt nur
+      einen kleinen Anteil des weltweit verfügbaren Kaffees dar. Geschmacklich
+      unterscheidet sich Liberica-Kaffee mit seinem oft als rauchig, fruchtig
+      und blumig empfundenen Geschmack stark von den eher schokoladigen und
+      nussigen Noten von Arabica oder den erdigen und kräftigen Noten von
+      Robusta. <br /><br />
+      <u>Wesentliche Eigenschaften von Liberica:</u><br /><br />
+      <p>Aussehen: großen, unregelmäßig geformten Kaffeekirschen</p>
+      <br />
+      <p>Haupt-Anbauregionen: Philippinen, Malaysia, Indonesien, Liberia</p>
+      <br />
+      <p>
+        Charakteristika: Kräftig, rauchig, holzig, mit fruchtigen und floralen
+        Noten
+      </p>
+      <br />
+      <p>Erste Ernte: Nach 3-4 Jahren</p>
+      <br />
+      <p>Anbauhöhe: 0 – 700 Meter über dem Meeresspiegel</p>
+      <br />
+      <p>
+        Erntezeit: Variiert je nach Region (z.B. Mai-Juli in den Philippinen,
+        Juni-August in Malaysia)
+      </p>
+      <br />
+      <p>
+        Anbau-Anteil am Weltmarkt: gering, Nischenmarkt, oft in Mischungen
+        verwendet, um einzigartige Geschmacksprofile zu erzeugen
+      </p>
+      <br />
+      <p>
+        Blattstruktur: Sehr große Blätter, widerstandsfähig gegen Trockenheit
+        und Hitze
+      </p>
+      <br />
+      <p>Koffeingehalt: 1,23 – 1,5%</p>
+      <br />
+      <a
+        href="https://www.kultbohne.de/kaffee-lexikon/liberica/"
+        target="_blank"
+        >klicken Sie hier um mehr über diese Sorten zu lesen</a
+      >
+
+      <br /><br />
+      <a id="close" onclick="closeLiberica()"
+        >>>klicken Sie hier, um diese Info schließen</a
+      >
+    </div>
+    <div id="excelsa" class="excelsa hide">
+      Wie der Liberica-Kaffee so ist auch Excelsa Kaffee ein Nischenprodukt. Die
+      Excelsa Bohne wird oft in Mischungen verwendet, um eine zusätzliche
+      Geschmackstiefe zu erreichen. <br /><br />
+      <u>Wesentliche Eigenschaften von Excelsa:</u><br /><br />
+      <p>
+        Aussehen: großen, länglichen Blätter und die widerstandsfähigen Bohnen
+        aus, die in ovalen Kaffeekirschen heranwachsen
+      </p>
+      <br />
+      <p>
+        Haupt-Anbauregionen: Südostasien, insbesondere Vietnam, Laos, Kambodscha
+      </p>
+      <br />
+      <p>
+        Charakteristika: Komplex, fruchtig, säuerlich, mit einem Hauch von
+        dunklen Früchten und Röstaromen
+      </p>
+      <br />
+      <p>Erste Ernte: Nach 3-4 Jahren</p>
+      <br />
+      <p>Anbauhöhe: 0 – 1.300 Meter über dem Meeresspiegel</p>
+      <br />
+      <p>Erntezeit: Variiert je nach Region (z.B. November-April in Vietnam)</p>
+      <br />
+      <p>
+        Anbau-Anteil am Weltmarkt: gering, Nischenmarkt, oft in Mischungen
+        verwendet, um komplexere Geschmacksprofile zu erzeugen
+      </p>
+      <br />
+      <p>Blattstruktur: Große Blätter, widerstandsfähig gegen Trockenheit</p>
+      <br />
+      <p>Koffeingehalt: 0,86 – 1,24%</p>
+      <br />
+      <a href="https://www.kultbohne.de/kaffee-lexikon/excelsa/" target="_blank"
+        >klicken Sie hier um mehr über diese Sorten zu lesen</a
+      >
+
+      <br /><br />
+      <a id="close" onclick="closeExcelsa()"
+        >>>klicken Sie hier, um diese Info schließen</a
+      >
+    </div>
+    <script src="cafe5.js"></script>
   </body>
 </html>

@@ -14,9 +14,21 @@ body {
   margin: 2.5%;
   height: 90%;
 }
+.tables {
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+}
+.varieties li {
+  list-style: none;
+  padding: 15px;
+  margin-bottom: 25px;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 1.75rem;
+  cursor: pointer;
+}
 audio {
   margin-left: 12%;
-  margin-right: 43%;
+  margin-right: 35%;
   margin-top: 5px;
 }
 audio::-webkit-media-controls-play-button,
@@ -33,4 +45,26 @@ a {
 }
 a:hover {
   color: dodgerblue;
+}
+
+.hide {
+  display: none;
+}
+
+.arabica,
+.robusta,
+.liberica,
+.excelsa {
+  position: absolute;
+  top: 5%;
+  left: 2.5%;
+  width: 1515px;
+  height: 730px;
+  background-color: rgba(246, 231, 180, 0.7);
+  padding: 15px;
+  font-size: 1.65rem;
+}
+#close {
+  margin-left: 1000px;
+  text-decoration: overline underline;
 }
